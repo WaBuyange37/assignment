@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechSol</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      span:nth-child(1) {
+        background-color: blue;
+        transition-timing-function: ease;
+      }
+
+      span:nth-child(2) {
+        background-color: green;
+        transition-timing-function: linear;
+      }
+
+      span:nth-child(3) {
+        background-color: orchid;
+        transition-timing-function: ease-in;
+      }
+
+      span:nth-child(4) {
+        background-color: brown;
+        transition-timing-function: ease-out;
+      }
+
+      span:nth-child(5) {
+        background-color: tomato;
+        transition-timing-function: ease-in-out;
+        position: relative;
+        bottom: 177px;
+        width: 320px;
+        height: 160px;
+      }
+
+      .animation:hover span {
+        transform: translateX(80vw);
+      }
+
+      /* Not the current focus */
+      .animation {
+        border: 2px solid orange;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 auto;
+        height: 180px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .items {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 200px;
+      }
+
+      span {
+        background-color: teal;
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 94px;
+        text-align: center;
+
+        transform: translateX(0);
+        transition-property: transform;
+        transition-duration: 5600ms;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="headNav">
+      <h2>TechSol</h2>
+      <img src="./sun.png" class="sun" alt="" />
+      <ul class="navigation">
+        <li class="nav"><a href="./portfolio.htm">Home</a></li>
+        <li class="nav"><a href="./about.html"> About</a></li>
+        <li class="nav">...</li>
+      </ul>
+    </header>
+    <div class="animation">
+      <div class="items">
+        <span>Kwizera Mugisha</span>
+        <span>Kazina Jule</span>
+        <span>Regis</span>
+        <span>W offer you best Tech services</span>
+        <span
+          ><ul>
+            <li>Hardware maintenance</li>
+            <li>Software/web dev</li>
+            <li>Website conslitant</li>
+            <li>database mantainance</li>
+          </ul></span
+        >
+      </div>
+    </div>
+    <section class="landning">
+      <div class="container">
+        <div class="landContent">
+          <h1>Welcome to TechSol – We provide innovative Tech Solutions!</h1>
+
+          <p>
+            At TechSol, we are a team of passionate tech enthusiasts driven by
+            creativity, innovation, and problem-solving. We specialize in
+            providing custom solutions that merge cutting-edge technology with
+            your unique needs. Whether you’re looking to build robust web
+            applications, optimize your digital presence, or create dynamic user
+            experiences, we are here to transform your ideas into powerful
+            solutions.
+          </p>
+          <h3>Our Expertise:</h3>
+          <ul>
+            <li>Full-stack Web Development</li>
+            <li>Custom Software Solutions</li>
+            <li>Digital Transformation & Optimization</li>
+            <li>Busness Consiltant</li>
+          </ul>
+          <p>Hit our developer and know more about Him</p>
+          <a href="./Mugishaprofile.html">Mugisha</a><a href="">Regis</a
+          ><a href="">Kazina</a>
+        </div>
+        <div class="imgOnlanding">
+          <h4>We make Life Brighter!</h4>
+          <img src="./brighter.jpeg" alt="" />
+          <em
+            >by troubleshoting your problem, you are the one to testify your
+            life is now Brighter.<br />Everyone is thanking TechSol</em
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>This is the footer.</p>
+    </footer>
+  </body>
+</html>

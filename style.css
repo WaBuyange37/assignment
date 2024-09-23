@@ -1,0 +1,67 @@
+:root {
+  --backg: #697565;
+  --texto: #181c14;
+  --links: #ecdfcc;
+  --actColor: #b8001f;
+  --menuColor: #f5efff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: var(--backg);
+}
+.headNav {
+  background-color: white;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+.sun {
+  width: 120px;
+  position: absolute;
+  left: 190px;
+  top: 14px;
+  z-index: 0;
+  height: 80px;
+}
+.headNav h2 {
+  font-size: 62px;
+  position: relative;
+  right: 100px;
+  z-index: 1;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 23px;
+}
+.navigation > li {
+  list-style: none;
+  padding: 4px;
+  margin-right: 20px;
+  transform: translate(18px, 20px);
+}
+li > a {
+  background-color: var(--links);
+  padding: 4px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+/* upper part-Menu is above,  */
+/*  */
+.container {
+  display: flex;
+  width: 100%;
+}
+.landContent {
+  width: 70%;
+  margin: 25px;
+}
+
+.imgOnlanding {
+  width: 30%;
+}
